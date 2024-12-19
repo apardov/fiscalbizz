@@ -159,7 +159,7 @@ export const TaxCalculate = () => {
 						<div className="col-md-10 m-auto mt-2">
 							<label htmlFor="inputTax" className="form-label fw-bold">Monto del Impuesto</label>
 							<input type={"number"} className="form-control" id="inputTax" onChange={(e) => handleTax(e)}
-							       required/>
+							       placeholder={0} required/>
 							{error && <div style={{color: 'red'}}>{error}</div>}
 						</div>
 						<div className="col-md-10 m-auto mt-2">
